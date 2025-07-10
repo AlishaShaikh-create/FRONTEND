@@ -54,3 +54,7 @@ y = 20;     // Throws error: y is not declared
 
 //3.const
 //const – is like let, but the value of the variable can’t be changed.
+
+
+console.log(2+2+'4')//44
+console.log('1'+2+2);//122
