@@ -28,5 +28,40 @@ for(let i=9;i>=2;i--)
     }
 console.log(`${temp} * 9 + ${i-2} ${space} =${num+(i-2)} `);
 }
+console.log("--------------------------------");
+//  Pattern 1):
 
+//  * * * * * 
+// * * * *
+// * * * 
+// * *
+// *
+let t='';
+for(let i=1;i<=5;i++)
+{
+    
+    for(let j=5;j>=i;j--)
+    {
+          t+="*";
+    }
+}console.log(t);
 
+console.log("--------------------------------");
+// Floyd's Triangle
+// 1
+// 2  3
+// 4  5  6
+// 7  8  9  10
+// 11 12 13 14 15
+let count=1;
+for(let i=1;i<=5;i++)
+{
+    let t1='';
+    for(let j=1;j<=i;j++)
+    {
+       t1=t1+count +" ";
+       count++;
+    }console.log(t1);
+}
+
+console.log("--------------------------------");
