@@ -43,12 +43,58 @@ sayHello("Alisha");
  * 
  * Input getUserRole(name, role)
  */
-
+var read=require('readline-sync');
 function roles(user,role)
 {
-    var read=require('readline-sync');
+    
     user=read.question("Enter your name:");
     role=read.question("Enter your role:");
     console.log(`Your name is ${user} and role is ${role}`);
 }
 roles();
+
+/**
+ * Make a function that will return if the input value is even or not.
+ * isEven();
+ */
+function isEven(n)
+{
+    n=read.question("Enter the number:");
+    if(n%2===0)
+    {
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(isEven());
+
+// RETURN IN FUNCTION
+// Function should return something.
+// The return is used to return the value of the function call;
+// The reutrn statment dnotes that the function has ended.
+// If a function is not returning something it will by default return an undefined value.
+function msg()
+{
+    return "hello";
+    console.log("hello ");//does not print this line because return indicates the end of the statement
+}
+
+//DEFAULT VALUE
+function random(name,text=anotherFnc())
+{
+    console.log(name,text);
+}
+function anotherFnc()
+{
+    console.log("hello");
+}
+random("alis");
+
+//RETURNING VALUE
+//sum of 2 numbers and returing value
+function sum(a,b)
+{
+    return a+b;
+}
+console.log(sum(2,3)); //5
