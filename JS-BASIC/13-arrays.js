@@ -20,6 +20,13 @@ console.log(student.name,student.year);
 let arr=new Array();
 let array=[];
 
+//we can even specify the size of the array
+let newarray=new Array(2);
+console.log("Length of the new array",newarray.length);
+//OUTPUT:
+//Length of the new array 2
+
+
 //CREATING ELEMENTS IN THE ARRAY
 let fruits = ["Apple", "Orange", "Plum"];
 console.log(fruits);
