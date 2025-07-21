@@ -69,3 +69,17 @@ console.log(student[0].name);
 //John
 
 //OBJECTS OF ARRAY:
+let score={
+    rohit:[10,20,30,400],
+    virat:[30,400,50,100],
+}
+//ACCESSING THE ARRAY OF THE OBJECT:
+console.log(score.rohit);
+//OUTPUT:
+//[ 10, 20, 30, 400 ]
+
+
+//ACCESSING THE ELEMENT OF THE ARRAY:
+console.log(score.virat[3]);
+//OUTPUT:
+//100
