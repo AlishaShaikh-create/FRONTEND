@@ -1,0 +1,22 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+ 
+  "description": "JavaScript programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlishaShaikh-create/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AlishaShaikh-create/JavaScript/issues"
+  },
+  "homepage": "https://github.com/AlishaShaikh-create/JavaScript#readme"
+}
