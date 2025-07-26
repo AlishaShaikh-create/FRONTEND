@@ -21,6 +21,7 @@ for(let i=0;i<matrix.length;i++)
     {
        matrix[i][j]=read.questionInt(`Enter the element at ${i} row and ${j} column:`);  
     }
+    
 }
  console.log(matrix);
 }
