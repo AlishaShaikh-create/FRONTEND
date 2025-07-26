@@ -1,5 +1,5 @@
-var read=require("readline-sync");
-
+// var read=require("readline-sync");
+import read from 'readline-sync';
 function recreateInputMatrix()
 {
    var rows=read.questionInt("Enter the number of rows:");
@@ -20,4 +20,4 @@ for(let i=0;i<matrix.length;i++)
 return matrix; 
 
 }
-recreateInputMatrix();
+export default recreateInputMatrix;
