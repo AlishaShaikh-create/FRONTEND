@@ -1,8 +1,9 @@
 //if condition
 // if(conditon )
 // {
-
+     //write something
 // }
+
 // A number 0, an empty string "", null, undefined, and NaN all become false. Because of that they are called “falsy” values.
 // if(0)
 // {
@@ -110,3 +111,4 @@ switch(role){
    case "User":console.log("Gets access to only consume the content.");break;
    default:console.log("Wrong input");break;
 }
+

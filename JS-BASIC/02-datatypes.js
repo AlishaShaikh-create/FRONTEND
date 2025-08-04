@@ -17,6 +17,7 @@ console.log( "not a number" / 2 ); // NaN, such division is erroneous
 
 // NaN ==NaN true
 //The number data type can store upto range of ±(2**(53)-1) 
+
 console.log(9007199254740991 + 1); // 9007199254740992
 console.log(9007199254740991 + 2); //this is beyond a particular range
 // to over come this big int was used
