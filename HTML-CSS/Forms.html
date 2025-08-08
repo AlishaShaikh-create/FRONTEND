@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML </title>
+
+</head>
+<body>
+    <!-- action attribute specifies what actions needed to be performed when the from is submitted or where the form data needed to be send -->
+      <form action="/action"></form><hr>
+
+
+    <!-- INPUT: used to take user input -->
+     <label >Text input</label>
+    <input type="text">
+    <br>
+    <label>Password Input</label>
+    <input type="password">
+    <br>
+    <label>Number input</label>
+    <input type="number">
+    <br>
+    <label>Time input</label>
+    <input type="time">
+    <br>
+    <label>Button</label>
+    <input type="button" value="Submit">
+<hr>
+<!-- PLACEHOLDER  for,id attribute -->
+ <label for="user">Username:</label>
+<input type="text" placeholder="Enter username " id="user">
+<br>
+<label for="pass">Password:</label>
+<input type="password" placeholder="Enter password" id="pass">
+<hr>
+<br>
+<!-- name attribute in the form is used to store the data in the backend in the form of name value pair -->
+ <label for="name">Enter name:</label>
+<input type="text" placeholder="this is placeholder place" name="name" id="name">
+<br>
+
+<hr>
+<!--BUTTONS-->
+<!-- button is used to submit the data ,if we write the button inside the form its functionality is to submit the data in a specified location mentioned in the form action attribute -->
+
+<form action="/server">
+    <h1>Form button</h1>
+    <button >Submit</button>
+</form>
+
+
+</body>
+</html>
