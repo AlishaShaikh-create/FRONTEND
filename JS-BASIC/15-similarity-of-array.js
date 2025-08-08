@@ -19,4 +19,4 @@ console.log(arr1 == arr1);
 // true
 
 //WHY obj1 not equal to obj2?
-// even the element in the object are similar but they are stored in the different memory location 
+// even the element in the object are similar but they are stored in the different memory location z

@@ -5,7 +5,7 @@ let student={
     dept:"CSE",
     year:"4th year",
 };
-//PRINTING ONJECTS 
+//PRINTING OBJECTS 
 console.log(student);
 
 //ACCESSING THE ELEMENTS:
