@@ -1,0 +1,39 @@
+h1{
+    color:rgba(14, 96, 229, 0.45);
+   text-align: center;
+   text-decoration: underline;
+    
+}
+p{
+    color:rgb(185, 112, 112);
+    background-color: cornsilk;
+    text-align: justify;
+    text-decoration:line-through;
+}
+button{
+    color:gold;
+    background-color: black;
+}
+h2{
+    color:orange;
+}
+button{
+    background-color:rgb(0,25,225);
+    color:white;
+}
+h3{
+    color:teal;
+}
+
+#text{
+    border:2px solid black;
+    width:50%;
+    height: 400px;
+    text-align: justify;
+    text-decoration: red underline;
+    
+}
+
+a{
+    text-decoration: none;
+}
