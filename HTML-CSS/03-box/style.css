@@ -1,0 +1,23 @@
+div{
+    height:200px;
+    width:500px;
+    background-color: pink;
+    /* border-width: 5px;
+    border-color:blue;
+    border-style:double; */
+    border:2px double gray;
+    border-top-color:red;
+    margin-bottom:20px;
+    padding:100px;
+    margin: 20px auto;
+}
+button{
+    border-radius:15px;
+    height: 100px;
+    width:50%;
+    background-color:skyblue;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius:200px;
+    border:2px solid blue
+
+}
