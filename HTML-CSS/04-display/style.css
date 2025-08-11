@@ -1,0 +1,16 @@
+/* h2{
+    display:inline;
+    background-color: pink;
+}
+span{
+    display:block;
+    background-color: goldenrod;
+} */
+
+span{
+    /* background-color: green; */
+    border:2px solid black;
+    height: 200px;
+    width:200px;
+    padding:100px
+}
