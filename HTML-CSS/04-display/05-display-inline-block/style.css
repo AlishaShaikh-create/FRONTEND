@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border:2px solid black;
+    display: inline-block;
+    margin:5px;
+}
+#third
+{
+    display:none;
+}
