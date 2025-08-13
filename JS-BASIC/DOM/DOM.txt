@@ -1,0 +1,8 @@
+//DOM :DOCUMENT OBJECT MODEL:
+//The document object represents your web page.
+// If you want to access any element in an HTML page, you always start with accessing the document object.
+
+//HTML DOM methods are actions you can perform (on HTML Elements).
+
+//HTML DOM properties are values (of HTML Elements) that you can set or change.
+document.getElementById('first');//where first is the name of the id;

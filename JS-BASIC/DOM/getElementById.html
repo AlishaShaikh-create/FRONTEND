@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="first">Heading</h1>
+
+
+    <script >
+        console.log(document.getElementById("first"));
+        document.getElementById("first");
+        //document.getElementById return element by the id 
+        // as h1 has id as 'first' so it retun the h1 element
+        //OUTPUT:
+        //<h1 id="first">Heading</h1>
+
+        let obj=document.getElementById("first");
+        console.log(obj.tagName); 
+        //OUTPUT:
+        //h1
+        //storing the object in the variable now u can assess and manipulate all the property of the object
+    
+        //changing the content using the dom of h1 heading:
+        obj.innerText="Hello welcome to the DOM world!";
+        console.log(obj.innerText);
+        //h1 text have been changed to the follwing text
+
+        //if the id does not exits then we get null value:
+        console.log(document.getElementById("Alisha"));
+        //OUTPUT:
+        //there is no id named "Alisha" you got output as null
+   
+
+    </script>
+</body>
+</html>
