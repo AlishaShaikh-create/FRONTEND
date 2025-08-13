@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">Heading 1</h1>
+    <h2 class="head">Heading 2</h2>
+    <h3 class="head">heading 3</h3>
+
+    <script>
+      console.log(document.getElementsByClassName("head"));
+
+      //document.getElementByClassName basically returns the "collection"
+
+      console.log(document.getElementsByClassName("abc"));
+      //if the classname does not exist then it return the empty collection.
+
+      //to get the individual element of the class;
+      let heading=document.getElementsByClassName("head");
+      //to get the individual element of the class name
+      for(let i=0;i<heading.length;i++)
+      {
+        console.log(heading[i]);
+      }
+      
+      //just changing the individual content of the html document:
+      heading[1].innnerText="I am changed text";
+
+      console.log(heading[1].innnerText);
+      //OUTPUT:
+      //I am changed text
+    </script>
+</body>
+</html>
