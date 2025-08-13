@@ -6,7 +6,7 @@ function recreateInputMatrix()
    var cols=read.questionInt("Enter the number of colums:");
    let matrix=new Array(rows);
   
-for(let i=0;i<cols;i++)
+for(let i=0;i<matrix.length;i++)
 {
     matrix[i]=new Array(cols);
 }
