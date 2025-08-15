@@ -19,8 +19,8 @@ const print=()=>{
 }
 print();
 
-// IMPLICIT RETURN
+// IMPLICIT RETURN :implicit return means that without the specially specifying
 // if the arrow function do not print or calculate the value it just return the value then we can even not use the return keyword.
-const mul=(a,b)=>a*b ;
+const mul=(a,b) => a*b ;
 console.log(mul(2,3));
 
