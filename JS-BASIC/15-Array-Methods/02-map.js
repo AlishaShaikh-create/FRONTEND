@@ -11,11 +11,3 @@ let double=num.map((ele)=> {
 } );
 
 
-//filter:
-// As map function return a new array filter method do not return a new array.
-
-let number=[2,4,5,6,8,9,10,11,12];
-let even=((ele)=>{
-    return ele%2==0;
-});
-// console.log(even);
