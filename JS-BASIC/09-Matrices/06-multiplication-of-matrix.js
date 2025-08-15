@@ -1,4 +1,4 @@
-import recreateInputMatrix from "./20-recreate-input-matrix.js";
+import recreateInputMatrix from "./03-recreate-input-matrix.js";
 function multiplication()
 {
     let matrixA=recreateInputMatrix();

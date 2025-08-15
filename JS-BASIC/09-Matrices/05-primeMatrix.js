@@ -6,7 +6,7 @@
 // Input: [[5,4,6,1],[5,0,5,3],[2,5,8,9],[0,2,3,5]]
 // Output: [5,5,5,3,2,5,2,3,5]
 
-import recreateInputMatrix from "./20-recreate-input-matrix.js";
+import recreateInputMatrix from "./03-recreate-input-matrix.js";
 let matrixA=recreateInputMatrix();
 function main()
 {
