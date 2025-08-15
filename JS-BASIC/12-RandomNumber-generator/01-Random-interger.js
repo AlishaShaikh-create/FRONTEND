@@ -38,3 +38,19 @@ console.log(Random);
 Random=Math.floor(Math.random()*10)+1;
 //with this step the 10 is also generated
 console.log(Random);
+
+//Random Integer within a Range (Inclusive of Min, Exclusive of Max):
+function randomNumber(min,max)
+{
+    let number=Math.floor(Math.random()*(max-min))+min;;
+    return `The number generated is:${number}`;
+}
+console.log(randomNumber(10,15));
+
+// Random Integer within a Range (Inclusive of Both Min and Max):
+function randomNum(min,max)
+{
+    let number=Math.floor(Math.random()*(max-min+1))+min;
+    return `The number generated is:${number}`;
+}
+console.log(randomNum(10,15));
