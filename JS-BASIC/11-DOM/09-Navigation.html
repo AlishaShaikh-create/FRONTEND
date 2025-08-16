@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Heading</h1>
+    </div>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+    </ul>
+    <script>
+        //if we want to navigate or print its parentElement ,child Element
+
+        //if we want to find the parent Element for the any element.there will be single parent for any element
+       let h1=document.querySelector('h1');
+       console.log(h1.parentElement);
+   
+        //if we want to find the children Element for the any element.there will be many children for any element
+     let ul=document.querySelector('ul');
+     console.log(ul.children);
+
+     //to count the number of children
+     console.log(ul.childElementCount);
+    </script>
+</body>
+</html>
