@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red;background-color:black" id="head">Hello World</h1>
+    <script>
+      //getAttribute : it is accessing element through attribute can be id ,className ,height
+      
+      //firstly we need to select the element:
+      h1=document.querySelector('h1');
+      console.log(h1);//h1 element got selected
+
+      console.log(h1.getAttribute('id'));//it return the arrtibute value 
+      //OUTPUT:head
+
+      //setAttribute:we can now set the different attribute value for the selected attribute
+
+      //setAttribute takes 2 parameter as 1st is the attribute(id or can be anything like height,width) and second is value that you want to change for that aatribute
+      h1.setAttribute('id',"heading");
+      console.log(h1);
+      console.log(h1.getAttribute('id'));    
+      
+      //be careful while working with the getter and setters it effect the styling as well if u have written the external css file..
+    </script>
+</body>
+</html>
