@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading main">Hello</h1>
+
+
+    <script>
+        //classList : It is used to get the list of class associated with the class
+        h1=document.querySelector('h1');
+       console.log(h1.classList);    
+
+       //If we want to add new class 
+       h1.classList.add('green');
+       // If we want to remove the classlist 
+       h1.classList.remove("green");
+       //setAttribute only add one property at one time with class list we can add many
+ 
+
+       //If we want to check  if a particular class exits or not
+       console.log(h1.classList.contains('main'));//if class is present return true or else return false
+
+       //to add or remove the class if class exist remove the class and if it does not exits add the class
+       h1.classList.toggle("hero");
+       console.log(h1.classList);
+       //the hero class does not exist so it addes the hero class
+        h1.classList.toggle("hero");
+        console.log(h1.classList);
+
+    </script>
+</body>
+</html>
