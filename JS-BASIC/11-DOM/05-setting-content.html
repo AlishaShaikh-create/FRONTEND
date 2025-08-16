@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque placeat eos. Quisquam dolorem veritatis, nobis, temporibus animi voluptates obcaecati neque molestias repellendus reprehenderit voluptatem? Quia fuga magnam repellendus pariatur.<span style="display:none">HIDDEN ELEMENT</span></p>
+    
+    <script>
+        //Manipulating the content of the html element:
+        //firstly we need to select the element
+        let para=document.querySelector('p');
+        console.log(para);
+        //innerText:
+        // This inner test print the inner text of the given element
+        console.log(para.innerText);
+       
+        //textContent:
+        //text content even shows the hidden element which might be made hidden through style tag
+        console.log(para.textContent);
+
+        //innerHtml
+        //It shown all according the markup 
+        console.log(para.innerHTML);
+
+        para.innerText="hello world";//with this the paragraph text got changed to hello world
+        console.log(para);
+        //now if in the sentence i want to make something in bold:
+        para.innerHTML="Hi this is <b>Tom</b>"
+        console.log(para);
+
+
+    </script>
+</body>
+</html>
