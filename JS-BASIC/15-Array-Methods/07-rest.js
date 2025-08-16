@@ -20,7 +20,7 @@ printArgs(1,2,3);
 //OUTPUT:
 // [Arguments] { '0': 1, '1': 2, '2': 3 }
 
-function minimumNumber(msg,...mini)
+function minimumNumber(msg,...mini)//here if wyou want to write the arguments write before the ...mini don't write after the msg ii will give u error
 {
     console.log(msg);
     return mini.reduce((min,ele)=>{
@@ -32,3 +32,4 @@ function minimumNumber(msg,...mini)
     });
 }
 console.log(minimumNumber("hello",10,20,30,-1,40));
+
