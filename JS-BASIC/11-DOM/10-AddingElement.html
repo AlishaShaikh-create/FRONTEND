@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <h1>Creating html Element</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, incidunt, vel similique dolorum cupiditate repellendus perspiciatis dolores deserunt minima alias velit illum harum praesentium at quisquam nam sed? Quasi, omnis.</p>
+
+    <script>
+
+        //To create a Element we use create Element this will just create an element but we need to insert it document as well
+
+        let para=document.createElement('p');
+        para.innerText="hello world";
+        document.body.appendChild(para);
+
+        let btn=document.createElement("button");
+        btn.innerText="help"
+        let body=document.querySelector('body');
+        body.appendChild(btn);
+
+        //append:helps is appending in the same element it self here we can append the paragrapgh or even the element
+        para.append(" This is new text");
+        //OUTPUT:
+        //hello worldThis is new text
+        para.append(btn);
+        //Append anyhting at the end:
+
+       //preprend element at the start
+       para.prepend(btn);
+
+       //insertAdjacent:insert the element at specified position
+
+       //insertAdjacentElement(position,element)
+       //position has 4 values:
+       //beforebegin,afterbegin,beforeend,afterend
+       let newbtn=document.createElement("button");
+       newbtn.innerText="new Button";
+       let p=document.querySelector('p');
+       p.insertAdjacentElement('beforebegin',newbtn);
+    </script>
+</body>
+</html>
