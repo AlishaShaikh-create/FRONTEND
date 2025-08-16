@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid black;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    
+<div></div>
+
+
+    <script>
+      let p=document.createElement('p');
+      div=document.querySelector('div');
+      console.log(p);
+      p.innerText="Hey I'm red!"
+      p.style.color="red";
+      div.appendChild(p);
+
+      let h3=document.createElement('h3');
+      h3.innerText="I am a blue h3!";
+      p.insertAdjacentElement("beforebegin",h3);
+      h3.style.color="blue";
+
+      let d=document.createElement('div');
+      let h1=document.createElement("h1");
+      let para=document.createElement('p');
+      
+      h1.innerText="I am in div";
+      para="Me too";
+
+      d.append(h1);
+      d.append(para);
+      d.classList.add("box");
+      document.querySelector("body").append(d);
+    </script>
+</body>
+</html>
