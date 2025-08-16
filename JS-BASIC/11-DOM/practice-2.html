@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .style{
+            color:white;
+            background-color: blue;
+        }
+        .h1{
+            text-decoration: black underline;
+            color:red;
+        }
+    </style>
 </head>
 <body>
 
     <script>
+
         let input=document.createElement("input");
         let btn=document.createElement("button");
         btn.innerText="Click Me";
         document.querySelector("body").append(input);
         document.querySelector("body").append(btn);
+
+        input.setAttribute("placeholder","username");
+        btn.setAttribute('id','btn');
+
+        let button=document.querySelector("#btn");
+        button.classList.add("style");
+
+        let h1=document.createElement('h1');
+        h1.innerText="Dom practice";
+        document.querySelector("body").append(h1);
+        h1.classList.add("h1");
+
+
+
 
     </script>
 
