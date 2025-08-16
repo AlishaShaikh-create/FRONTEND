@@ -7,3 +7,4 @@ console.log(newarr);
 let sum = newarr.reduce((acc,ele)=>acc+ele,0)
 let avg=sum/newarr.length;
 console.log(avg);
+
