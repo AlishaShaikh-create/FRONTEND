@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border:2px solid black;
+    }
+</style>
+</head>
+<body>
+    <h1>Heading Tag</h1>
+    <div class="box">
+       <ul>
+       <li>Home</li>
+       <li>About</li>
+       <li>Contact</li>
+       <li>Service</li>
+    </ul>
+    </div>
+
+
+
+
+
+
+   <script>
+    h1=document.querySelector('h1');
+    console.log(h1);
+    console.log(h1.style);//with this i get all css styles
+    //manipulating the style
+    h1.style.color="purple";
+    h1.style.backgroundColor="pink";
+
+
+    //Changing the links text color using JavaScript
+    let lists=document.querySelectorAll('li');
+    console.log(lists);
+    for(let i=0;i<lists.length;i++)
+    {
+        lists[i].style.color='purple';//.style is not used much because this line will set the inline style 
+        //most of the style is written the external css file
+    }
+
+   </script>
+</body>
+</html>
