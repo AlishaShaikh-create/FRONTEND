@@ -6,3 +6,8 @@
 
 //HTML DOM properties are values (of HTML Elements) that you can set or change.
 document.getElementById('first');//where first is the name of the id;
+
+To apply changes in the html element we can access element by id 
+let obj=document.getElementById("heading"); here id name is img
+In this I have stored my html tag in the obj now i can perform all the task on this html tag that was stored in th obj
+obj.innerText="tom and jerry"
