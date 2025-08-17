@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lets demonstrate the this keyword </h1>
+    <h3> Lets see how</h3>
+    <p>I am a sample paragraph</p>
+    
+    <button>click me</button>
+
+
+    <script>
+         // This keyword in Event Listerner
+
+         //this keyword is basically used to when we have multiple events and we have to apply the same thing using DOM
+        
+        let btn=document.querySelector('button');
+        btn.addEventListener("click",function(){
+            console.log(this) //this keyword represent to that object that has called .. In this the object is the btn(button)
+        })
+
+        //I have to apply the same thing on the h1,h3 and p so this can be done using this keyword:
+        
+        h1=document.querySelector('h1');
+        h3=document.querySelector('h3');
+        p=document.querySelector('p');
+
+        //one way to do this is 
+
+       // h1.addEventListener("click",function(){
+       //     console.log(this.innerText);
+       //     this.style.backgroundColor="wheat";
+       // });
+
+       // h3.addEventListener("click",function(){
+       //     console.log(this.innerText);
+       //    this.style.backgroundColor="wheat";
+       // });
+
+       // p.addEventListener("click",function(){
+       //     console.log(this.innerText);
+       //     this.style.backgroundColor="wheat";
+       // });
+
+        //here we are writing multiple times so to overcome this..we will create a new function
+
+        function change(){
+            console.log(this.innerText);
+            this.style.backgroundColor="skyblue";
+        }
+        h3.addEventListener("click",change);
+        h1.addEventListener("click",change);
+        p.addEventListener("click",change);
+
+
+
+    </script>
+</body>
+</html>
