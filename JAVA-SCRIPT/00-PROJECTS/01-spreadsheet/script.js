@@ -27,14 +27,15 @@ function createSpreedSheet()
         for(let j=0;j<COLS;j++)
         {
             var isHeader, isDisabled, cellData='', rowName, columnName;
-            const cell=new Cell(isHeader,isDisabled,cellData, i,j,rowName,columnName ,false)
+
+            const cell=new Cell(isHeader,isDisabled,cellData, i,j,rowName,columnName ,false);
             spreadsheetRow.push(cell);
             
         }
         spreadsheet.push(spreadsheetRow);
     }
     console.log(spreadsheet);
-   
+   drawSpreadSheet()
 }
 createSpreedSheet();
  
@@ -42,9 +43,24 @@ function drawSpreadSheet()
 {
     for(let i=0;i<spreadsheet.length;i++)
     {
+        let rowElementContainer=document.createElement("div");
+        rowElementContainer.className='cell-row'
+
         for(let j=0;j<spreadsheet[i].length;j++)
         {
-            let div=document.querySelector("#cell-status")
+            const cell=spreadsheet[i][j];
+            rowElementContainer.append(createCellElement(cell));
         }
+        spreadSheetContainer.appendChild(rowElementContainer)
     }
+}
+
+function createCellElement(cell)
+{
+  const cellElement=document.createElement('input');
+  cellElement.className='cell';
+  cellElement.value =cell.data;
+  cellElement.id='cell_'+cell.row+cell.column;
+  cellElement.disabled=cell.disabled;
+ return cellElement;
 }
