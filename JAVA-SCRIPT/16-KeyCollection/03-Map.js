@@ -52,3 +52,5 @@ for(const [key,value] of saying)
 
 saying.clear();
 console.log(saying);
+//OUTPUT:
+//Map(0) {}
