@@ -1,0 +1,1 @@
+In JavaScript, a collection generally refers to a group of values or objects that are stored together and can be accessed, manipulated, or iterated over. JavaScript offers several built-in collection types, each with its own characteristics and use cases.
