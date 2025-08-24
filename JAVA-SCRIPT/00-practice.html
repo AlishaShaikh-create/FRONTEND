@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  div{
+    background-color: brown;
+    height: 100px;
+    width:100px;
+  };
+  button{
+    background-color: gray;
+    
+  }
+</style>
+</head>
+<body>
+<div>
+  <button>submit</button>
+</div>
+<button id="btn">helpme</button>
+<script>
+  let btn=document.querySelector("button");
+  let div=document.querySelector("div");
+  btn.addEventListener("click",function(){
+    console.log("button was clicked");
+  })
+  div.addEventListener("click",function(){
+    console.log("div was clicked")});
+
+let b=document.getElementById("btn");
+b.addEventListener("click",(event)=>{
+  console.log(event);
+})
+</script>
+
+</body>
+</html>
+
+
