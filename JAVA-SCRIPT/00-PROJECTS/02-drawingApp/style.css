@@ -1,8 +1,86 @@
 #drawing{
-    /* height:300px;
-    width:45%; */
-   
+  
     border:1px solid black;
-    margin-top:100px;
-    margin:a
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ 
+  width: 1000px;
+  height: 500px;
+
+
+}
+#canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px
+  
+}
+body{
+    background-color: rgb(224, 221, 221);
+    text-align :center;
+    
+}
+ul li{
+    margin-top: 30px;
+display: inline-block;
+margin-right:150px;
+}
+
+#container{
+    height: 67px;
+    width: 300px;
+    border:1px solid black;
+    box-shadow: 1px 2px 3px black;
+    padding:20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top:-40px;
+   
+}
+
+
+ .undo-button {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        border-radius: 4px;
+        
+    }
+
+#color{
+    text-decoration: none;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    border:none;
+    padding: 0;
+   
+}
+h1{
+    font-size:normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1::first-letter{
+    color:red;
+    font-family: cursive;
+    font-size:48px;
+}
+span{
+    font-size: larger;
+    display: block;
+    display: flex;
+    justify-items: flex-start;
+}
+header{
+    margin-top:0px;
+    padding:0px
+}
+.undo-button{
+    height: 50px;
+    width:100px;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius:15px
 }
