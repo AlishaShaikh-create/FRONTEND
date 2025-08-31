@@ -13,12 +13,13 @@ h1=document.querySelector("h1");
 //     h1.style.color='blue';
 // },3000)
 
-function changeColor(color,delay)
+function changeColor(color,delay,nextColorChange)
 {
     
     setTimeout(()=>
     {
        h1.style.color=color; 
+       nextColorChange();
     },delay);
 }
 
