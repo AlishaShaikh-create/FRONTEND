@@ -37,8 +37,10 @@ function createPromise(num)
     {
       if(num>4){
         resolve(num);
+        console.log(num);
       }else{
         reject(num);
+        console.log(num);
       }
     })
     
