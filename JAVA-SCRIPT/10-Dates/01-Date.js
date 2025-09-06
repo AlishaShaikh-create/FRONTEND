@@ -1,6 +1,7 @@
 let todayDate=new Date();
 console.log(todayDate);
 //2025-08-04T08:36:38.192Z
+
 // That's an example of an ISO 8601 timestamp—a standardized way of representing date and time. Here's how it breaks down:
 
 // 2025-08-04 → Date (Year-Month-Day)
@@ -24,14 +25,21 @@ console.log(todayDate);
 
 // It doesn’t change with daylight saving time, making it ideal for international coordination.
 
-let New = new Date('Mon Aug 04 2025 14:31:34 GMT+0530 ');
+let New = new Date('Sat Sep 06 2025 12:53:04 GMT+0530 (India Standard Time) ');
+console.log(New);
+//OUTPUT:
+// 2025-09-06T07:23:04.000Z  this is iso format which it gave 5hours:30Min behind
+
 console.log(New.toString());
 
+//In JavaScript, the .toString() method on a Date object converts the date and time into a human-readable string based on your local timezone 🕒
+
+
 let date1=new Date();
+console.log("new date print the date value in the utc time format:" , date1);
 console.log("printing date1 value:")
-console.log(date1.toString());
+console.log(date1.toString());//convert the utc time format to the local time format
 
-let newDate=+new Date();
+//using of the + in new Date ()
+let newDate=+new Date();// the + is used to convert the date into the number which is the timestamp from 1st january 1970
 console.log(newDate);
-
-
