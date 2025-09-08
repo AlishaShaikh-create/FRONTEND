@@ -9,19 +9,19 @@
 
  */
  
-//  function storeData(data)
-//  {
-//    return new Promise((resolve,reject)=>{
-//     let internetSpeed=Math.floor(Math.random()*10)+1;
-//     if(internetSpeed>5){
-//          resolve("Success:data was saved");
-//     }else{
-//         reject("failure: data was not saved");
-//     }
+ function storeData(data)
+ {
+   return new Promise((resolve,reject)=>{
+    let internetSpeed=Math.floor(Math.random()*10)+1;
+    if(internetSpeed>5){
+         resolve("Success:data was saved");
+    }else{
+        reject("failure: data was not saved");
+    }
    
-//    })
+   })
 
-//  }
+ }
 
 // States of the promise
 // Promises basically have 3 states:
