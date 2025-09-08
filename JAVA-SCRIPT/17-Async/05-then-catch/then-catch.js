@@ -1,7 +1,9 @@
 //Promise is basically an object 
 //syntax to create a new promise
 // new Promise((resolve,reject)=>{
-//     //write the code here
+//     //  write the code here
+    //    if resolve what should it return
+    //    else if reject what it should do
 // });
 
 // const promise=new Promise((resolve,reject)=>{
@@ -17,29 +19,63 @@
 
 //we can even use the multiple then blocks
 //LETS SEE HOW:
-function dataSaved(data){
-    let promise=new Promise((resolve,reject)=>{
-        if(data)
+
+// function dataSaved(data){
+//     let promise=new Promise((resolve,reject)=>{
+//         if(data)
+//         {
+//             resolve("data saved");
+//         }else{
+//             reject("data rejected");
+//         }
+//     })
+//     return promise;
+// }
+
+// dataSaved("alisha").then(()=>{
+//  console.log(" successfully executed");
+//  return dataSaved("Alisha");
+// }).then(()=>{
+//     console.log("data 2 saved");
+//     return dataSaved("john");
+// })
+// .then(()=>
+// {
+//     console.log("Data3  saved")
+// })
+// .catch(()=>{
+//     console.log("errroorrr");
+// })
+
+
+// AGAIN ABOUT PROMISE:
+function accept(data)
+{
+    return new Promise((resolve,reject)=>{
+        const success=false;
+        if(success)
         {
-            resolve("data saved");
+            resolve("promise resolved")
         }else{
-            reject("data rejected");
+            reject("promise reject");
         }
     })
-    return promise;
 }
 
-dataSaved("alisja").then(()=>{
- console.log(" successfully executed");
- return dataSaved("Alisha");
-}).then(()=>{
-    console.log("data 2 saved");
-    return dataSaved("john");
+let request = accept("Alisha");
+request
+.then(()=>{
+    console.log("inside 'then' block")
 })
-.then(()=>
+.catch(()=>
 {
-    console.log("Data3  saved")
+    console.log("inside catch block");
 })
-.catch(()=>{
-    console.log("errroorrr");
-})
+
+/**
+ *    then mathod itself takes an callback (execute if the resolve state executed)
+ * 
+ * catch :it also takes an call back (Execute after the catch block)
+ *
+ * 
+ */
