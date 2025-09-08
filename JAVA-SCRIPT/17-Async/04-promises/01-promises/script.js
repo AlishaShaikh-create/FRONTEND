@@ -30,5 +30,11 @@
 // pending
 
 // PROMISE :
-// promise can be created as 
-// new Promise(resolve,reject)
+// promise can be created as :
+// const promise=new Promise((resolve,reject)=>{
+//     if(success){
+//         console.log("Success");
+//     }else{
+//         console.log("Somethig went wrong");
+//     }
+// })
