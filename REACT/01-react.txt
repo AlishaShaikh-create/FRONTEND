@@ -18,3 +18,6 @@ How does the JSX run in browse?
 Babel is a JavaScript compiler. It takes your modern JavaScript code (like ES6+, JSX, or even TypeScript) and translates it into older JavaScript that all browsers can understand—even the outdated ones.
 
 JSX -> BABEL -> JS
+
+
+  

@@ -1,0 +1,70 @@
+To create react project
+
+Steps1:
+npx create-react-app < name of the project >
+
+Step 2:
+move to that folder
+cd < folder name>
+
+Step 3:
+npm start
+
+
+TO USE VITE
+
+Step 1:
+go to vite official website
+npm create vite@latest
+
+Step 2:
+Enter project name
+
+Step 3:
+choose Framework
+ react
+
+Step 4:
+Varient of react:
+ javascript
+
+Step 5:
+move to that folder
+
+Step 6:
+npm install 
+
+Step 7:
+npm run dev ( To start the server)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
