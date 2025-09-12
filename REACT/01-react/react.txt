@@ -1,0 +1,26 @@
+REACT ?
+ React is javaScript library for creating UI
+
+WHAT IS UI[user interface]
+
+UI, or User Interface, refers to the elements and points of interaction between a human and a digital system, such as a website or app. 
+
+UI design focuses on creating the visual aspects—like screens, buttons, colors, typography, and layout—that users see and interact with to use a product.
+
+REACT : Created by Facebook
+
+Component:Individual piece that can be reused
+
+All the code which is written in the react uses the component
+
+React app is made out of component .A component is a piece of the UI(user interface) that has its own logic and appearance . A component can be as small as a button ,or as large as a entire page
+
+What ever is written in react is in JSX(javaScript XML)
+
+
+JSX [JAVASCRIPT XML]
+It help us to write HTML directly inside the JS
+
+JSX -> babel -> JS 
+( The code written in react is written in JSX now internally the code is converted into java Script through babel)
+
