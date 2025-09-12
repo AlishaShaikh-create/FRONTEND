@@ -1,0 +1,16 @@
+Request - Response cycle
+
+CLIENT SEND Request:
+You type a URL or click a button. The browser sends an HTTP request to the server.
+
+SERVER Accept the request and send RESPONSE to the CLIENT
+
+WHAT IS AN API?
+
+API: Application Program Interface
+Ex:
+customer(client) order the food [request]-> waiter (API) -> goes to the kitchen and tell the cheff to prepare the food (server)
+in return 
+cheff prepare the food(server) [that means that the request was accepted] -> waiter -> gives the prepared food back to the client.
+
+API is the way of communication between the software
