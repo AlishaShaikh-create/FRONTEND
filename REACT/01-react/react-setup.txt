@@ -1,0 +1,15 @@
+Create-react-app(older version of the react)
+
+TO SETUP REACT
+
+React+vite (Latest verison of the react)
+
+Goto vite official website
+
+npm create vite@latest
+
+Follow all the steps that are required.
+-> create the project name 
+-> choose the framework
+-> choose the language(javascript)
+
