@@ -1,5 +1,5 @@
 //Single threaded nature of javascript
-// to achieve  the single the threaded nature of js we use call backs
+// to achieve  the single the threaded nature of js we use setTimeout 
 
 console.log("I am before the setTimeout function");
 
