@@ -5,7 +5,7 @@
 
 import './App.css'
 
-import {Title,Number} from './Title.jsx'
+import {Title,Number,Javascript} from './Title.jsx'
 
 // With div we can render multiple things or write multiple things
 // Every component should be written in the seperate
@@ -19,8 +19,8 @@ function App() {
     // </div>
     <>
       <Title/>
-      <Title/>
-     <Title/>
+     <Number/>
+     <Javascript/>
     </>
 
   )
