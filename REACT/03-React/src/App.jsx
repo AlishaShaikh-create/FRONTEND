@@ -1,12 +1,13 @@
 import Product from "./Product.jsx"
+import ProductTab from "./Producttab.jsx"
 
 function App(){
 
+
 return (
   <>
-  <Product title="Phone" price="30k"/>
-  <Product title="Laptop" price="60k"/>
-  <Product title="Pen" price="30"/>
+  <ProductTab/>
+
   </>
 )
 }
