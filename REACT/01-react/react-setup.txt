@@ -13,5 +13,10 @@ Follow all the steps that are required.
 -> choose the framework
 -> choose the language(javascript)
 
-TO RUN THE FILE:
-  npm run dev
+NEXT move to the folder that u made 
+   cd (folder name )
+
+(npm install) to install all the dependencies 
+
+npm run dev (To run the file)
+    

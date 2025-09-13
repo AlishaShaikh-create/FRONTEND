@@ -1,0 +1,18 @@
+Rules of markup in JSX 
+
+Rule1:
+Return the single root Element
+
+Rule2:
+Close all the tags
+
+Rule3:
+camelCase most of the things
+
+ JavaScript reserved keywords cannot be used as html attribute so we need to use the alternative name for that
+  
+
+ ForEx:
+ class is an reserved keyword in js so it cant be used as html attribute instead we can use className
+
+<div className="xyz"></div> 
