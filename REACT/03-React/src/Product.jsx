@@ -4,10 +4,6 @@ function Product({title,price ,feature })
   let list=feature.map((ele)=>{
     return <li>{ele}</li>
   });
-
-
-
-
     return(
 
         <div>
@@ -18,5 +14,7 @@ function Product({title,price ,feature })
         </div>
     )
 }
+
+
 
 export default Product;

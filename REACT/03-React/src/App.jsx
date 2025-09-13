@@ -1,12 +1,11 @@
-import Product from "./Product.jsx"
-import ProductTab from "./Producttab.jsx"
 
+import Producttab from "./Producttab.jsx"
 function App(){
 
 
 return (
   <>
-  <ProductTab/>
+  <Producttab/>
 
   </>
 )
