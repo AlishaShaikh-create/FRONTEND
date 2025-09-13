@@ -13,3 +13,5 @@ Follow all the steps that are required.
 -> choose the framework
 -> choose the language(javascript)
 
+TO RUN THE FILE:
+  npm run dev
