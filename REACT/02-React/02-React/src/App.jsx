@@ -12,13 +12,17 @@ import {Title,Number} from './Title.jsx'
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <Title></Title>
-      <Number/>
-      
-      <h1>I am App component</h1>
-    </div>
+    // <div>
+    //   <Title/>
+    //   <Title/>
+    //   <Title/>
+    // </div>
+    <>
+      <Title/>
+      <Title/>
+     <Title/>
+    </>
+
   )
 }
 

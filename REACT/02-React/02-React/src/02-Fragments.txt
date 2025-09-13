@@ -1,0 +1,17 @@
+REACT FRAGMENTS:
+
+ Fragments let you group a list of children without adding extra notes to the DOM
+
+<></> This is called react fragments
+
+
+ function App() {
+  return (
+    <> ----> this is fragments
+      <Title/>
+      <Title/>
+     <Title/>
+    </>
+
+  )
+}
