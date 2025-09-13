@@ -1,0 +1,70 @@
+Writing condition in jsx
+
+PRODUCTTAB FILE:
+
+import Product from './Product.jsx';
+function ProductTab()
+{
+    let option =["hitech","durable","handy"];
+ return(
+     <>
+         <Product  title="book" price={20} feature={option}  />
+         <Product  title="Laptop" price={60000} feature={option}  />
+         <Product title="Phone" price={30000} feature={option}/>
+   </>
+ );
+
+}
+export default ProductTab;
+
+-----------------------------------------------------------------
+PRODUCT FILE:
+
+function Product({title,price ,feature })
+{
+  let list=feature.map((ele)=>{
+    return <li>{ele}</li>
+
+  });
+  let discount=price>30000 ? "Discount of 5%":""
+    return(
+    
+        <div>
+             <h1>{title}</h1>
+             <h3>Price: {price}</h3>
+             <p>{list}</p>
+             <p>{discount}</p>
+            
+        </div>
+    )
+}
+export default Product;
+
+---------------------------------
+
+in the above code if the price is greater than 30 thousand then the discount will be given but if price is not greater than 30,000 then ntg is done but still a <P> node will be created which is unnecessary so its not a good way of doing .
+
+---------------------------------------
+
+function Product({title,price ,feature })
+{
+  let list=feature.map((ele)=>{
+    return <li>{ele}</li>
+
+  });
+  
+    return(
+    
+        <div>
+             <h1>{title}</h1>
+             <h3>Price: {price}</h3>
+             <p>{list}</p>
+             { price>30000 ? <p>"Discount of 5%"</p>:null} --------> here we made the changes
+            
+        </div>
+    )
+}
+
+
+
+export default Product;
