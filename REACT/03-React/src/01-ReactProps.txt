@@ -1,0 +1,32 @@
+PROPS:
+Props (short for “properties”) in React are how components talk to each other. Think of them as arguments you pass to a function, but in this case, you're passing data to a component.
+
+Product file:
+                       ----> this is destructuring 
+                      |
+function Product({title,price})
+{                
+    console.log(title);
+    return(
+
+        <div>
+             <h1>{title}</h1>
+        <p>The price of the product is {price}</p>
+        </div>
+    )
+}
+
+-------------------------------------------------
+
+App file:
+
+function App(){
+
+return (
+  <>
+  <Product title="Phone" price="30k"/>
+  <Product title="Laptop" price="60k"/>
+  <Product title="Pen" price="30"/>
+  </>
+)
+}
