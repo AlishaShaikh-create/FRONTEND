@@ -1,0 +1,59 @@
+EVENTS IN REACT
+As in dom we have EventListerner in the same way  how can we add event listerner in the jsx
+
+APP FILE:
+
+function sayHello()
+{
+    return (
+       console.log("hello")
+    )
+}
+
+function sayBye()
+{
+    return console.log("Bye")
+}
+
+function Button()
+{
+    return(
+        <>
+        <button onClick={sayHello}>Click me!</button>
+        <p onClick={sayBye}>On clicking this para it return Bye</p>
+        </>
+    )
+}
+
+export default Button;
+
+--------------------------------------------
+
+HANDING NONCLICK EVENTS:
+
+onMouserOver()
+Check for the different event through google
+
+-> Dont call the function you just have to pass the reference of the function
+
+Ex:
+
+function handlingdblClick(){
+     return console.log("The button was dobble clicked");
+}
+
+function Button()
+{
+    let style={textAlign:"center"}
+    
+    return(
+        <>
+        <div style={style}>
+         <button onDoubleClick={handlingdblClick ()}>Click twice</button>
+        </div>                                    |-> here we have called the function so it directly execute we have to not write the parenthesis [without writing parenthesis means we are passing it as reference] 
+        
+        </>
+    )
+}
+
+-----------------------------------------------
