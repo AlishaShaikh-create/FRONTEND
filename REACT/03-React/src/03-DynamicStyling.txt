@@ -1,0 +1,26 @@
+DYNAMIC COMPONENT STYLING :
+styling the component based on some conditions is called dynamic componenet styling 
+
+We can even write the css file in the jsx
+
+PRODUCT FILE:
+
+function Product({ title, price, feature }) {
+ let color={backgroundColor:"blue"}
+  let isDiscount = price > 30000;
+  let styles = { backgroundColor: isDiscount ? "pink" : null };  -----> here we have checked the conditions if the price is greater than 30000 then the backgroundColor will be pink or else none
+  let list = feature.map((ele) => {
+    return <li>{ele}</li>;
+  });
+
+  return (               
+    <div className="Container" >
+      <h1>{title}</h1>
+      <h3 styles={color}>Price: {price}</h3>
+      <p>{list}</p>
+      {isDiscount ? <p>"Discount of 5%"</p> : null}
+    </div>
+  );
+}
+
+
