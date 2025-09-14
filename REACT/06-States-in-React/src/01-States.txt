@@ -1,0 +1,50 @@
+States in React:
+
+3 main thing in react:
+
+1.components
+2.props
+3.States
+
+What is STATES:
+->   The states is  a build-in react object that is used to conatin data or information about the component .
+-> A component's state can change over time; whenever it changes,its components re-render
+
+--------------------------
+COUNTER FILE:
+
+ function Counter()
+{
+   let count=0;
+   function incCount()
+   {
+    count+=1;
+    console.log(count);
+   }
+
+   return (
+    <div>                
+        <h3> Count = {count}</h3>
+        <button onClick={incCount}>Increase count</button>
+    </div>
+   )
+}
+export default Counter;
+
+In the above code count value is getting increased the value is not getting shown up in the <h3> tag . you wont see in any changes in the UI
+
+States help in re-rendering the Component
+ 
+what does this actually mean:
+  It means that the component will re-execute again  then the value will get changed
+
+Before understanding Sates let us understand 
+
+HOOKS:
+-> we can use the hooks in the function only
+-> They let you use state and other React feature without writing class
+
+useState():
+ useState is  a React Hook that lets you add a state variable to your component
+
+const [state,setState] =useState(initialState)
