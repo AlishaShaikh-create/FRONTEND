@@ -1,5 +1,6 @@
-function onsubmit()
+function onsubmit(event)
 {
+    event.preventDefault();
     console.log("form was submitted")
 }
 

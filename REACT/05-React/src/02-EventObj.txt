@@ -17,3 +17,28 @@ function EventObj()
 }
 
 export default EventObj;
+
+----------------------------------
+
+FORM.JSX
+
+function onsubmit(event)
+{
+    event.preventDefault();  --> this prevent the default behaviour of the form
+    console.log("form was submitted");
+}
+
+function FormSubmit()
+{
+    return (
+        <>
+        <form onClick={onsubmit}>
+            <input type="text" placeholder="Enter the name" />
+            <button >Submit</button>
+        </form>
+        </>
+        
+    )
+}
+
+export default FormSubmit;
