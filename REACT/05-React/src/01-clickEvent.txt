@@ -1,7 +1,7 @@
 EVENTS IN REACT
 As in dom we have EventListerner in the same way  how can we add event listerner in the jsx
 
-APP FILE:
+Button FILE:
 
 function sayHello()
 {
