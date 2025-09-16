@@ -48,3 +48,40 @@ useState():
  useState is  a React Hook that lets you add a state variable to your component
 
 const [state,setState] =useState(initialState)
+                                     |--> initial state
+
+useState return an array with exactly 2 values
+1.current state . During the frist render, it will match the initialState you have passed.
+
+2. (setState) set function that lets you update the state to a different value and trigger 
+
+-> The use state cannot be used directly we need to import it from the react
+
+import {useState} from 'react';
+
+Example of State:
+
+
+
+import { useState } from 'react';
+function App()
+{
+   let [count,setCount]=useState(0);
+   let incCount=()=>{
+    // count=count+1
+    setCount(count+1); // this is not the right way of updating the value
+    console.log(count);
+
+   }
+
+  return (
+    <>
+    <h1> States in React </h1>
+    <h3> Count = {count}</h3>
+    <button onClick={incCount}>Increase count</button>
+   
+
+    </>
+  )
+}
+export default App;
