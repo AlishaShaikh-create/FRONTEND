@@ -6,8 +6,16 @@
     console.log("count ",count)
     
    let incCount=()=>{
-    setCount(count+1) //doubt 
-    console.log("inside incCount" ,count)
+    // console.log("inside the count function:",count)
+    setCount((currCount)=>{
+        return currCount+1
+    })
+    
+        setCount((currCount)=>{
+        return currCount+1
+    })
+
+    
    }
 
    return (
