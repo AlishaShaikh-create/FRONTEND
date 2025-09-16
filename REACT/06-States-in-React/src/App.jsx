@@ -15,11 +15,11 @@ function App()
   return (
     <>
     <h1> States in React</h1>
-     <LikeButton/>
+     {/* <LikeButton/> */}
 
 
 
-    {/* <Counter/> */}
+    <Counter/>
 
     </>
   )

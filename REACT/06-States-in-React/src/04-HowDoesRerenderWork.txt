@@ -1,0 +1,23 @@
+HOW DOES RE-RENDER WORK:
+
+ import { useState } from "react";
+ function Counter()
+{
+    let [count,setCount]=useState(0); --> this line is only for the re-initialization
+  ;
+   let incCount=()=>{
+    setCount(count+1)
+   }
+
+   return (
+    <div>
+        <h3> Count = {count}</h3>
+        <button onClick={incCount}>Increase count</button>
+    </div>
+   )
+}
+export default Counter;
+
+In re-rendering the complete code gets re-render except the initialization part
+
+
