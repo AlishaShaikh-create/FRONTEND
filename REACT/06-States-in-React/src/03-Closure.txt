@@ -1,0 +1,55 @@
+Closure:
+
+ Closure: A closure is a feature in javascript where an inner function has access to the outer function variables
+
+ In JS ,once a function complete its execution,
+ any variable that were defined inside the function scope cease to exist
+
+function outer()
+{
+    let a=10;
+    function inner()
+    {
+        let b=20;
+        console.log(a +b);
+
+    }
+    // inner();
+    return inner;
+}
+let inside=outer();
+inside()
+
+
+
+### 🧠 What’s Happening
+
+1. **`outer()` is called**:
+   - It declares a variable `a = 10`.
+   - It defines a function `inner()` that uses `a` and its own variable `b = 20`.
+   - Instead of calling `inner()` immediately, it **returns** the `inner` function itself.
+
+2. **`let inner = outer();`**:
+   - This calls `outer()` and stores the returned `inner` function in the variable `inner`.
+   - Even though `outer()` has finished executing, the returned `inner` function still “remembers” the value of `a = 10`.
+
+3. **`inner()` is called**:
+   - Inside `inner()`, it declares `b = 20`.
+   - It then logs `a + b`, which is `10 + 20 = 30`.
+
+---
+
+### 🔐 Closure in Action
+
+The magic here is that `inner()` still has access to `a`, even though `outer()` has already finished. This is called a **closure**—`inner()` “closes over” the variable `a` from its outer scope.
+
+---
+
+### 🧪 Why This Is Powerful
+
+Closures let you:
+- Preserve state between function calls.
+- Create private variables.
+- Build more modular and maintainable code.
+
+Want to see how closures are used in real-world scenarios like React or async programming? I can show you some cool examples.
