@@ -85,3 +85,7 @@ function App()
   )
 }
 export default App;
+
+-----------------------------------
+useState hooks can be used inside the componet only
+ we can create multiple state Event
