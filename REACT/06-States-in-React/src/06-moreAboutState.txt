@@ -1,3 +1,11 @@
+MORE ABOUT STATE:
+
+->Re-rendering works only if the state value is changed.
+
+let [count,setCount]=useState(0);
+// In this useSate(0) we can even pass the function.
+
+
  import { useState } from "react";
    function init()
     {
@@ -8,20 +16,17 @@
 {
   
 
-    let [count,setCount]=useState(init);
+    let [count,setCount]=useState(init); --> here we need pass the reference of the function not the function call (init()). if we directly call the function what ever written in the funtion will again get executed.
+
+    
     console.log("The counter is getting re-rendered")
     console.log("count ",count)
     
    let incCount=()=>{
-    // console.log("inside the count function:",count)
-    // setCount((currCount)=>{
-    //     return currCount+1
-    // })
-    
         setCount((currCount)=>{
         return currCount+1
     })
-//  setCount(25);
+
     
    }
 
@@ -33,3 +38,4 @@
    )
 }
 export default Counter;
+
