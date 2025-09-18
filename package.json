@@ -1,7 +1,6 @@
 {
   "name": "mern-stack",
   "version": "1.0.0",
- 
   "description": "JavaScript programming",
   "main": "index.js",
   "scripts": {
@@ -18,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AlishaShaikh-create/JavaScript/issues"
   },
-  "homepage": "https://github.com/AlishaShaikh-create/JavaScript#readme"
+  "homepage": "https://github.com/AlishaShaikh-create/JavaScript#readme",
+  "dependencies": {
+    "figlet": "^1.9.3"
+  }
 }
