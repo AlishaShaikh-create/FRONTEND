@@ -22,27 +22,24 @@ A port number is like the apartment/room number inside that building.
 
 const PORT=3000; 
 
+//app.use(): 
 
-app.use((req,res)=>{
+// app.use((req,res)=>{
 //   console.log(req);
 
 // res.send("This is a basic response"); //here i have send the test as an response
 
 // res.send("<h1> Hello this is html form the  response </h1>") //here i have send the html as a respnse
 
-res.send({
-    name:"Alisha",
-    email:"alisha@dev"
-})
-
- 
+// res.send({
+//     name:"Alisha",
+//     email:"alisha@dev"
+// })
 //  console.log("request received");
+// })
 
-})
 
-app.listen(PORT,()=>{
-    console.log(`app is listening on port ${PORT}`)
-})
+
 
 // app.get('/',(req,res)=>{
 //     res.send("hello world");
@@ -58,4 +55,27 @@ app.listen(PORT,()=>{
 // app.METHOD(PATH, HANDLER)
 
 
+//Now we are sending request to multiple paths:
+app.get('/',(req,res)=>{
+    res.send("sending request to the root path");
+})
+app.get('/apple',(req,res)=>{
+    res.send("<h1>APPLE </h1>");
+})
+app.get('/orange',(req,res)=>{
+    res.send("<h1>ORANGE </h1>");
+})
 
+
+app.listen(PORT,()=>{
+    console.log(`app is listening on port ${PORT}`)
+})
+
+// app.get("*",(req,res)=>{
+//     res.send("Path does not exits");
+// })
+
+app.post('/',(req,res)=>{
+    console.log(req.body);
+    res.send("you send a post ")
+})
