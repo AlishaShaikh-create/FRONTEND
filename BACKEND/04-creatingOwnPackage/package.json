@@ -1,5 +1,5 @@
 {
-  "name": "mern-stack",
+  "name": "mypackage",
   "version": "1.0.0",
   "description": "JavaScript programming",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/AlishaShaikh-create/JavaScript.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alisha",
   "license": "ISC",
   "type": "module",
   "bugs": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AlishaShaikh-create/JavaScript#readme",
   "dependencies": {
-    "figlet": "^1.9.3"
+    "figlet": "^1.9.3",
+    "give-me-a-joke": "^0.5.1"
   }
 }
