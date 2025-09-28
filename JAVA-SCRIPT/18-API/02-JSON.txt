@@ -14,3 +14,11 @@ JAVASCRIPT OBJECT NOTATION
        |-> To parse a string data into a JS object 
    json.stringify(json) mathod
        |-> To parse a JS object data into JSON
+
+
+ TESTING API REQUEST:
+
+Tools:
+-> Hoppscoth
+-> postman
+
