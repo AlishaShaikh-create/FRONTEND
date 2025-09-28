@@ -2,10 +2,13 @@
 
 //throw keyword is used to throw the error
 //if the async function get resolved then the then block get execute or else the catch block get execute
+
+//Async function by default return a promise 
+
 async function greet()
 {
     // return "hello";
-    throw "some random error";
+    throw "some random error";   //throw keyword is used to throw the error
 }
 greet()
 .then((result)=>{
