@@ -1,0 +1,31 @@
+ADDING INFORMATION IN URLs :
+
+Example url:
+https://www.google.com/search?q=mango
+
+QueryString:q=mango this is key value pair 
+
+When we want to pass the additional information  in the api we use the query string 
+
+-> what ever that comes after the question mark becomes the query string
+
+-> This is the Example api for harry potter movies
+
+https://api.potterdb.com/v1/movies/
+
+-> Now to search the particular harry potter movie 
+
+then we can use the 
+
+https://api.potterdb.com/v1/movies/:id
+
+-> here id can be the particular id of the movie then we can get the particular id of the movie
+
+
+HTTP HEADER:
+    /     \
+request   response 
+
+-> with header with send lot of meta data 
+-> meta data: data about  data .
+
