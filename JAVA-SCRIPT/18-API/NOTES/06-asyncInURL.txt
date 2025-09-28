@@ -1,0 +1,11 @@
+FETCHING THE DATA IN THE URL
+
+let url = "https://catfact.ninja/fact"
+async function cat()
+{
+    let res=await fetch(url);
+    let data =await res.json();
+    console.log(data);
+}
+
+cat();
