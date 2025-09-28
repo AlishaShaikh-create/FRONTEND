@@ -1,0 +1,16 @@
+JSON:
+JAVASCRIPT OBJECT NOTATION
+
+-> JSON  is a format 
+-> data will get return in the json format
+-> Before the data was returned in the xml format.
+
+->JSON
+ 
+-> The data that you get through json will be in string format 
+
+->TO ACCESS THE JSON DATA:
+  json.parse(data) Method 
+       |-> To parse a string data into a JS object 
+   json.stringify(json) mathod
+       |-> To parse a JS object data into JSON
