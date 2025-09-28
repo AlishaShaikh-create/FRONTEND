@@ -1,0 +1,68 @@
+USING FETCH:
+
+-> Before using the fetch there was xmlhttp request object
+
+-> there was lot of proble with the above approach
+
+-> USING FETCH KEYWORD:
+
+-> fetch by default return a promise .
+-> so because of this it uses the 
+  .then()  -> if the promise gets resolved then .then() method is used.
+  .catch()  -> if the promise gets rejected then .catch() method is used.
+
+  Example code:
+
+let url = "https://icanhazdadjoke.com/";
+fetch(url,
+    {
+        headers:{                                    -------> the default data which is fetched by this is the html data no the json data so we need to convert this in the json format 
+            Accept:'application/json'
+
+
+        }
+    }
+)
+.then((res)=>{
+    console.log(res);
+    console.log("The promise got resolved");
+    res.json()     --> to actual get the value of the json we need to 
+    .then((data)=>{
+        console.log(data);
+    })
+    
+})
+.catch((error)=>{
+    console.log("The error is : ");
+    console.log(error);
+})
+
+FETCHING MANY DATA FROM THE URL:
+
+
+fetch(url,
+    {
+        headers:{
+            Accept:'application/json'
+
+
+        }
+    }
+)
+.then((res)=>{
+    return res.json();
+})
+.then((data1)=>{
+    console.log("data1 " ,data1);
+    return fetch(url, {
+        headers:{
+            Accept:'application/json'
+        }
+    })
+})
+.then((res)=>{
+    return res.json();
+})
+.then((data1)=>{
+    console.log("data1 " ,data1);
+})
