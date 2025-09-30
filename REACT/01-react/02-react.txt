@@ -19,8 +19,14 @@ What ever is written in react is in JSX(javaScript XML)
 
 
 JSX [JAVASCRIPT XML]
-It help us to write HTML directly inside the JS
+It help us to write HTML directly inside the JS.
+
+It's a syntax extension for JavaScript used primarily with React. JSX allows you to write HTML-like code directly within your JavaScript files, making it easier to visualize the structure of your UI components.
+
 
 JSX -> babel -> JS 
+
+-> Bable is a tool
+
 ( The code written in react is written in JSX now internally the code is converted into java Script through babel)
 
