@@ -1,0 +1,30 @@
+AXIOS:
+Library to create a http request 
+-> axios and fetch are similar 
+-> but it better to use the axios
+-> axios is besically an librabry
+
+-> to install the axios:
+   npm i axios 
+
+-> and use it using 
+    import axios from 'axios'
+
+Example :
+import axios from 'axios'
+let url = "https://catfact.ninja/fact";
+
+async function getFact() {
+  try{
+    let res = await axios.get(url);
+    console.log(res);
+  }
+  catch(error)
+  {
+    console.log(error);
+  }
+     
+}
+
+getFact();
+
