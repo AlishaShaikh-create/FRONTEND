@@ -1,21 +1,23 @@
 import React from "react";
-
-function Title()
+let name ="Alisha";
+function Product()
 {
   return(
-   <>
-   <h1>I am Title</h1>
-   <h1>This is alisha</h1>
-   </>
+    <>
+    <h3>Product name</h3>
+    <p>Description of the prodcut </p>
+    </>
   )
 }
 function App()
 {
   return(
     <>
-    <button> Hello World</button>
-    <Title/>
+      <Product/>
+        <Product/>
+      <Product/>
+
     </>
   )
 }
-export default Title;
+export default App;
